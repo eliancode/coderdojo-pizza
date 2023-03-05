@@ -13,4 +13,6 @@ model order {
   pizzaName  String
   quantity   String
   size       String
+  createdAt  DateTime @default(now())
+  archived   Boolean @default(false)
 }
