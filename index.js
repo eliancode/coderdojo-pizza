@@ -20,7 +20,7 @@ app.use(
   bodyParser.urlencoded({
     limit: "1mb",
     extended: true,
-    parameterLimit: 1000,
+    parameterLimit: 100,
   })
 );
 app.use(express.static(__dirname + "views"));
