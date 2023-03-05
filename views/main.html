@@ -30,6 +30,19 @@
       td {
         border-bottom: 1px solid #ddd;
       }
+      tr.strikeout td:before {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        border-bottom: 1px solid #111;
+        width: 100%;
+      }
+
+      tr.strikeout td:after {
+        content: "\00B7";
+        font-size: 1px;
+      }
     </style>
     <a
       id="link_to_list"
@@ -61,6 +74,8 @@
           <th>Pizza</th>
           <th>Anzahl</th>
           <th>Größe</th>
+          <th>Bestelldatum</th>
+          <th></th>
         </tr>
         <tbody id="orderTable"></tbody>
       </table>
@@ -70,11 +85,24 @@
         var table = document.getElementById("orderTable");
 
         for (var i = 0; i < data.length; i++) {
+          if (data[i].archived) {
+            data[i].personName = `<strike>${data[i].personName}</strike>`;
+            data[i].pizzaName = `<strike>${data[i].pizzaName}</strike>`;
+            data[i].quantity = `<strike>${data[i].quantity}</strike>`;
+            data[i].size = `<strike>${data[i].size}</strike>`;
+            data[i].createdAt = `<strike>${data[i].createdAt}</strike>`;
+            data[i].archiveButton = ``;
+          } else {
+            data[i].archiveButton = `<form action="/archiveorder/${data[i].id}">
+              <input type="submit" value="X"/></form>`;
+          }
           var row = `<tr>
                 <td>${data[i].personName}</td>
                 <td>${data[i].pizzaName}</td>
                 <td>${data[i].quantity}</td>
                 <td>${data[i].size}</td>
+                <td>${data[i].createdAt}</td>
+                <td>${data[i].archiveButton}</td>
               </tr>`;
           table.innerHTML += row;
         }

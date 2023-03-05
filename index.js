@@ -44,6 +44,16 @@ app.post("/orders", async (req, res) => {
   res.redirect(301, "/");
 });
 
+app.get("/archiveorder/:id", async (req, res) => {
+  const result = await prisma.order.update({
+    where: {
+      id: parseInt(req.params.id),
+    },
+    data: { archived: true },
+  });
+  res.redirect(301, "/");
+});
+
 app.get("/", (req, res) => {
   res.render("main");
 });
