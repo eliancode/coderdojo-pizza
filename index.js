@@ -1,10 +1,10 @@
-import sqliterun from "./sqlite.js";
 import { PrismaClient } from "@prisma/client";
 import express from "express";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import path from "path";
 import ejs from "ejs";
+import bodyParser from "body-parser";
 
 const app = express();
 const prisma = new PrismaClient();
@@ -16,6 +16,13 @@ app.listen(PORT, () => {
   console.log(`The server started on Port ${PORT}`);
 });
 app.use(express.json());
+app.use(
+  bodyParser.urlencoded({
+    limit: "5000mb",
+    extended: true,
+    parameterLimit: 100000000000,
+  })
+);
 app.use(express.static(__dirname + "views"));
 app.set("views", path.join(__dirname, "views"));
 app.engine("html", ejs.renderFile);
@@ -46,5 +53,3 @@ app.get("/", (req, res) => {
 });
 
 app.use(express.static("views"));
-
-app.get("/sqlite", sqliterun);
