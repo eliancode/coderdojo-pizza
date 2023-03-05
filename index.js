@@ -7,12 +7,11 @@ import path from "path";
 import ejs from "ejs";
 const app = express();
 const prisma = new PrismaClient();
-const PORT = process.env.PORT || 80;
-const __filename = fileURLToPath(
-    import.meta.url);
+const PORT = process.env.PORT || 800;
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 app.listen(PORT, () => {
-    console.log(`The server started on Port ${PORT}`);
+  console.log(`The server started on Port ${PORT}`);
 });
 app.use(express.json());
 app.use(express.static(__dirname + "views"));
@@ -20,7 +19,7 @@ app.set("views", path.join(__dirname, "views"));
 app.engine("html", ejs.renderFile);
 app.set("view engine", "html");
 app.get("/", (req, res) => {
-    res.render("main");
+  res.render("main");
 });
 
 app.use(express.static("views"));
