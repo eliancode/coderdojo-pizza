@@ -7,7 +7,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model pizza {
+model order {
   id         Int    @id @default(autoincrement())
   personName String
   pizzaName  String

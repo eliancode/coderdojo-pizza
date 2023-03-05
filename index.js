@@ -5,11 +5,13 @@ import { fileURLToPath } from "url";
 import { dirname } from "path";
 import path from "path";
 import ejs from "ejs";
+
 const app = express();
 const prisma = new PrismaClient();
 const PORT = process.env.PORT || 800;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
 app.listen(PORT, () => {
   console.log(`The server started on Port ${PORT}`);
 });
@@ -18,6 +20,27 @@ app.use(express.static(__dirname + "views"));
 app.set("views", path.join(__dirname, "views"));
 app.engine("html", ejs.renderFile);
 app.set("view engine", "html");
+
+app.get("/orders", async (req, res) => {
+  const orders = await prisma.order.findMany();
+  res.json({
+    success: true,
+    payload: orders,
+    message: "Operation Successful",
+  });
+});
+
+app.post("/orders", async (req, res) => {
+  const result = await prisma.order.create({
+    data: { ...req.body },
+  });
+  res.json({
+    success: true,
+    payload: result,
+    message: "Operation Successful",
+  });
+});
+
 app.get("/", (req, res) => {
   res.render("main");
 });
