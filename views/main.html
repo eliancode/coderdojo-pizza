@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzabestellung</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
   </head>
-  <h1 style="background-color: powderblue">Pizzabestellung</h1>
-  <style>
-    body {
-      background-image: url("Pizza.jfif");
-      background-color: #cec666;
-    }
-  </style>
   <body>
+    <h1 style="background-color: powderblue">Pizzabestellung</h1>
+    <style>
+      body {
+        background-image: url("Pizza.jfif");
+        background-color: #cec666;
+      }
+    </style>
     <form action="/orders" method="POST">
       <input
         type="text"
@@ -32,5 +33,34 @@
       <input type="text" placeholder="Größe" id="size" name="size" />
       <input type="submit" value="Bestellen" />
     </form>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Pizza</th>
+        <th>Anzahl</th>
+        <th>Größe</th>
+      </tr>
+      <tbody id="orderTable"></tbody>
+    </table>
+    <script>
+      function buildTable(data) {
+        var table = document.getElementById("orderTable");
+
+        for (var i = 0; i < data.length; i++) {
+          var row = `<tr>
+                <td>${data[i].personName}</td>
+                <td>${data[i].pizzaName}</td>
+                <td>${data[i].quantity}</td>
+                <td>${data[i].size}</td>
+              </tr>`;
+          table.innerHTML += row;
+        }
+      }
+      $.getJSON("/orders", function (data) {
+        console.log(data);
+        buildTable(data.payload);
+      });
+    </script>
   </body>
 </html>
