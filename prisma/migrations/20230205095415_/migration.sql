@@ -1,0 +1,4 @@
+-- CreateTable
+CREATE TABLE "Pizza" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT
+);
