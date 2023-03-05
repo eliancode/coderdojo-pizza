@@ -8,7 +8,7 @@ import bodyParser from "body-parser";
 
 const app = express();
 const prisma = new PrismaClient();
-const PORT = process.env.PORT || 800;
+const PORT = process.env.PORT || 8000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
