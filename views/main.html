@@ -5,24 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzabestellung</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<h1 style="background-color:powderblue;">Pizzabestellung</h1>
-<style>
-    body{
-  background-image: url("Pizza.jfif");
-  background-color: #cec666;
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <h1 style="background-color: powderblue">Pizzabestellung</h1>
+  <style>
+    body {
+      background-image: url("Pizza.jfif");
+      background-color: #cec666;
     }
-</style>
-<script>
-    var e=prompt("Pizza Name");
-    var b=prompt("Pizza Größe");
-    var c=prompt("Pizza Preis");
-    document.writeln("Pizza wurde bestellt!");
-    document.writeln("                        Name:"+"   "+e);
-    document.writeln("                        Größe:"+"   "+b);
-    document.writeln("                        Preis:"+"   "+c)
-</script>
-</pyscript>
-<body></body>
+  </style>
+  <body>
+    <form action="/orders" method="POST">
+      <input
+        type="text"
+        placeholder="Dein Name"
+        id="personName"
+        name="personName"
+      />
+      <input
+        type="text"
+        placeholder="Name der Pizza"
+        id="pizzaName"
+        name="pizzaName"
+      />
+      <input type="text" placeholder="Anzahl" id="quantity" name="quantity" />
+      <input type="text" placeholder="Größe" id="size" name="size" />
+      <input type="submit" value="Bestellen" />
+    </form>
+  </body>
 </html>
