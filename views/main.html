@@ -11,9 +11,23 @@
   <body>
     <h1 style="background-color: powderblue">Pizzabestellung</h1>
     <style>
+      html * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+      }
       body {
         background-image: url("Pizza.jfif");
         background-color: #cec666;
+      }
+      table {
+        background-color: cornsilk;
+        padding: 5px;
+        text-align: left;
+        width: 80%;
+        max-width: 900px;
+      }
+      th,
+      td {
+        border-bottom: 1px solid #ddd;
       }
     </style>
     <form action="/orders" method="POST">
@@ -34,15 +48,17 @@
       <input type="submit" value="Bestellen" />
     </form>
 
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Pizza</th>
-        <th>Anzahl</th>
-        <th>Größe</th>
-      </tr>
-      <tbody id="orderTable"></tbody>
-    </table>
+    <div>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Pizza</th>
+          <th>Anzahl</th>
+          <th>Größe</th>
+        </tr>
+        <tbody id="orderTable"></tbody>
+      </table>
+    </div>
     <script>
       function buildTable(data) {
         var table = document.getElementById("orderTable");
