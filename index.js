@@ -41,11 +41,7 @@ app.post("/orders", async (req, res) => {
   const result = await prisma.order.create({
     data: { ...req.body },
   });
-  res.json({
-    success: true,
-    payload: result,
-    message: "Operation Successful",
-  });
+  res.redirect(301, "/");
 });
 
 app.get("/", (req, res) => {
