@@ -1,5 +1,12 @@
-#heading {
-  font-size: 40px;
+#link_to_list {
+  color: blue;
+  font-size: 20px;
   display: flex;
   justify-content: center;
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
 }
