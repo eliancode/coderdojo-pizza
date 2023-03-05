@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
   </head>
+
   <body>
-    <h1 style="background-color: powderblue">Pizzabestellung</h1>
+    <h1 id="heading">Pizzabestellung</h1>
     <style>
       body {
         background-image: url("Pizza.jfif");
         background-color: #cec666;
       }
     </style>
+    <a
+      id="link_to_list"
+      href="https://el-salvatore.lieferbuddy.de/de/shop#pizza-2"
+      >Link zur Liste
+    </a>
     <form action="/orders" method="POST">
       <input
         type="text"
