@@ -1,0 +1,27 @@
+{
+  "name": "coderdojo-pizza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Frederik Estel",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.10.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "npm": "^9.5.0",
+    "path": "^0.12.7",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.4",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.10.1"
+  }
+}
