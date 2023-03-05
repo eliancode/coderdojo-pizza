@@ -46,5 +46,3 @@ app.get("/", (req, res) => {
 });
 
 app.use(express.static("views"));
-
-app.get("/sqlite", sqliterun);
