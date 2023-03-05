@@ -17,6 +17,8 @@
     "nodemon": "^2.0.20",
     "npm": "^9.5.0",
     "path": "^0.12.7",
+    "prettier": "^2.8.4",
+    "prettier-eslint": "^15.0.1",
     "sqlite": "^4.1.2",
     "sqlite3": "^5.1.4",
     "url": "^0.11.0"
