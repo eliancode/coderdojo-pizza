@@ -18,9 +18,9 @@ app.listen(PORT, () => {
 app.use(express.json());
 app.use(
   bodyParser.urlencoded({
-    limit: "5000mb",
+    limit: "1mb",
     extended: true,
-    parameterLimit: 100000000000,
+    parameterLimit: 1000,
   })
 );
 app.use(express.static(__dirname + "views"));
