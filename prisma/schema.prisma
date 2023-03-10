@@ -8,11 +8,11 @@ datasource db {
 }
 
 model order {
-  id         Int    @id @default(autoincrement())
+  id         Int      @id @default(autoincrement())
   personName String
   pizzaName  String
   quantity   String
   size       String
   createdAt  DateTime @default(now())
-  archived   Boolean @default(false)
+  archived   Boolean  @default(false)
 }
