@@ -3,6 +3,7 @@
   "compilerOptions": {
     "jsx": "react",
     "target": "ES2020",
-    "module": "Node16"
+    "module": "Node16",
+    "outDir": "dist"
   }
 }

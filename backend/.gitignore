@@ -1,7 +1,7 @@
 /node_modules
 /.env
+/dist
 
 # Prisma
 *.db
 *.db-journal
-*.js
