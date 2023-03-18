@@ -4,3 +4,4 @@
 # Prisma
 *.db
 *.db-journal
+*.js
