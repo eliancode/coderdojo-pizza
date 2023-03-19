@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import  Button  from "@mui/material/Button";
 import { styled } from '@mui/material/styles';
 import { DataGrid, GridRowsProp, GridColDef } from '@mui/x-data-grid';
-import { Router } from "@mui/icons-material";
+import  axios  from "axios";
 let id = 0
 function returnId(){
     id++
@@ -20,7 +19,14 @@ const columns: GridColDef[] = [
   { field: 'name', headerName: 'Name', width: 150, editable:true},
   { field: 'pizza', headerName: 'Pizza', width: 150, editable:true },
 ]
-export default function App() {
+function App() {
+
+  let data = useEffect(() => {
+    axios.get("https://jsonplaceholder.typicode.com/posts")
+    .then(res => console.log(res.data)
+    ).catch(err => console.log(err)
+    )
+  }, [])
   return (
     <div style={{ height: 300, width: '50%' }}>
       <DataGrid rows={rows} columns={columns} />
@@ -31,3 +37,4 @@ export default function App() {
     
   );
 }
+export default App;
