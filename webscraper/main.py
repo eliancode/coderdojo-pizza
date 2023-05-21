@@ -22,7 +22,7 @@ def scrape():
             results.append({'name': name, 'size': size, 'price': price})
 
     json_str = json.dumps(results, indent=4)
-    with open('output/results.json', 'w') as f:
+    with open('output/articles.json', 'w') as f:
         f.write(json_str)
 
 

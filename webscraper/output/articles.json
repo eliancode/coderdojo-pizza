@@ -1,0 +1,382 @@
+[
+    {
+        "name": "1. Pizza Mozzarella",
+        "size": "Klein \u00d8 26cm",
+        "price": "6,00 \u20ac"
+    },
+    {
+        "name": "1. Pizza Mozzarella",
+        "size": "Mittel \u00d8 32cm",
+        "price": "8,20 \u20ac"
+    },
+    {
+        "name": "1. Pizza Mozzarella",
+        "size": "Familie32x50cm",
+        "price": "16,50 \u20ac"
+    },
+    {
+        "name": "2. Pizza Salami",
+        "size": "Klein \u00d8 26cm",
+        "price": "6,30 \u20ac"
+    },
+    {
+        "name": "2. Pizza Salami",
+        "size": "Mittel \u00d8 32cm",
+        "price": "8,70 \u20ac"
+    },
+    {
+        "name": "2. Pizza Salami",
+        "size": "Familie32x50cm",
+        "price": "17,50 \u20ac"
+    },
+    {
+        "name": "3. Pizza Romano",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,30 \u20ac"
+    },
+    {
+        "name": "3. Pizza Romano",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,20 \u20ac"
+    },
+    {
+        "name": "3. Pizza Romano",
+        "size": "Familie32x50cm",
+        "price": "18,50 \u20ac"
+    },
+    {
+        "name": "4. Pizza Regina",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,30 \u20ac"
+    },
+    {
+        "name": "4. Pizza Regina",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,20 \u20ac"
+    },
+    {
+        "name": "4. Pizza Regina",
+        "size": "Familie32x50cm",
+        "price": "18,50 \u20ac"
+    },
+    {
+        "name": "5. Pizza Hawaii",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,20 \u20ac"
+    },
+    {
+        "name": "5. Pizza Hawaii",
+        "size": "Mittel \u00d8 32cm",
+        "price": "10,20 \u20ac"
+    },
+    {
+        "name": "5. Pizza Hawaii",
+        "size": "Familie32x50cm",
+        "price": "19,50 \u20ac"
+    },
+    {
+        "name": "6. Pizza Quattro Stagioni",
+        "size": "Klein \u00d8 26cm",
+        "price": "6,80 \u20ac"
+    },
+    {
+        "name": "6. Pizza Quattro Stagioni",
+        "size": "Mittel \u00d8 32cm",
+        "price": "8,50 \u20ac"
+    },
+    {
+        "name": "6. Pizza Quattro Stagioni",
+        "size": "Familie32x50cm",
+        "price": "19,00 \u20ac"
+    },
+    {
+        "name": "7. Pizza Primavera (scharf)",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,30 \u20ac"
+    },
+    {
+        "name": "7. Pizza Primavera (scharf)",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,20 \u20ac"
+    },
+    {
+        "name": "7. Pizza Primavera (scharf)",
+        "size": "Familie32x50cm",
+        "price": "17,50 \u20ac"
+    },
+    {
+        "name": "8. Pizza Vegetaria",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,30 \u20ac"
+    },
+    {
+        "name": "8. Pizza Vegetaria",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,20 \u20ac"
+    },
+    {
+        "name": "8. Pizza Vegetaria",
+        "size": "Familie32x50cm",
+        "price": "18,00 \u20ac"
+    },
+    {
+        "name": "9. Pizza Scharfe Salami",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,30 \u20ac"
+    },
+    {
+        "name": "9. Pizza Scharfe Salami",
+        "size": "Mittel \u00d8 32cm",
+        "price": "8,70 \u20ac"
+    },
+    {
+        "name": "9. Pizza Scharfe Salami",
+        "size": "Familie32x50cm",
+        "price": "17,50 \u20ac"
+    },
+    {
+        "name": "10. Pizza Americano",
+        "size": "Klein \u00d8 26cm",
+        "price": "8,80 \u20ac"
+    },
+    {
+        "name": "10. Pizza Americano",
+        "size": "Mittel \u00d8 32cm",
+        "price": "10,90 \u20ac"
+    },
+    {
+        "name": "10. Pizza Americano",
+        "size": "Familie32x50cm",
+        "price": "20,50 \u20ac"
+    },
+    {
+        "name": "11. Pizza Meeresfr\u00fcchte",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,80 \u20ac"
+    },
+    {
+        "name": "11. Pizza Meeresfr\u00fcchte",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,20 \u20ac"
+    },
+    {
+        "name": "11. Pizza Meeresfr\u00fcchte",
+        "size": "Familie32x50cm",
+        "price": "20,00 \u20ac"
+    },
+    {
+        "name": "12. Pizza Shrimps",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,30 \u20ac"
+    },
+    {
+        "name": "12. Pizza Shrimps",
+        "size": "Mittel \u00d8 32cm",
+        "price": "8,50 \u20ac"
+    },
+    {
+        "name": "12. Pizza Shrimps",
+        "size": "Familie32x50cm",
+        "price": "20,00 \u20ac"
+    },
+    {
+        "name": "13. Pizza Pastori",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,30 \u20ac"
+    },
+    {
+        "name": "13. Pizza Pastori",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,20 \u20ac"
+    },
+    {
+        "name": "13. Pizza Pastori",
+        "size": "Familie32x50cm",
+        "price": "17,50 \u20ac"
+    },
+    {
+        "name": "14. Pizza Tonno",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,30 \u20ac"
+    },
+    {
+        "name": "14. Pizza Tonno",
+        "size": "Mittel \u00d8 32cm",
+        "price": "8,50 \u20ac"
+    },
+    {
+        "name": "14. Pizza Tonno",
+        "size": "Familie32x50cm",
+        "price": "17,50 \u20ac"
+    },
+    {
+        "name": "15. Pizza El Salvatore",
+        "size": "Klein \u00d8 26cm",
+        "price": "8,30 \u20ac"
+    },
+    {
+        "name": "15. Pizza El Salvatore",
+        "size": "Mittel \u00d8 32cm",
+        "price": "10,90 \u20ac"
+    },
+    {
+        "name": "15. Pizza El Salvatore",
+        "size": "Familie32x50cm",
+        "price": "21,50 \u20ac"
+    },
+    {
+        "name": "16. Pizza Sardellen",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,80 \u20ac"
+    },
+    {
+        "name": "16. Pizza Sardellen",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,20 \u20ac"
+    },
+    {
+        "name": "16. Pizza Sardellen",
+        "size": "Familie32x50cm",
+        "price": "19,00 \u20ac"
+    },
+    {
+        "name": "17. Pizza Rucola",
+        "size": "Klein \u00d8 26cm",
+        "price": "6,80 \u20ac"
+    },
+    {
+        "name": "17. Pizza Rucola",
+        "size": "Mittel \u00d8 32cm",
+        "price": "8,20 \u20ac"
+    },
+    {
+        "name": "17. Pizza Rucola",
+        "size": "Familie32x50cm",
+        "price": "18,00 \u20ac"
+    },
+    {
+        "name": "18. Pizza Champignon",
+        "size": "Klein \u00d8 26cm",
+        "price": "6,30 \u20ac"
+    },
+    {
+        "name": "18. Pizza Champignon",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,20 \u20ac"
+    },
+    {
+        "name": "18. Pizza Champignon",
+        "size": "Familie32x50cm",
+        "price": "17,50 \u20ac"
+    },
+    {
+        "name": "20. Pizza K\u00e4se",
+        "size": "Klein \u00d8 26cm",
+        "price": "6,30 \u20ac"
+    },
+    {
+        "name": "20. Pizza K\u00e4se",
+        "size": "Mittel \u00d8 32cm",
+        "price": "7,70 \u20ac"
+    },
+    {
+        "name": "20. Pizza K\u00e4se",
+        "size": "Familie32x50cm",
+        "price": "20,00 \u20ac"
+    },
+    {
+        "name": "21. Pizza Riesengarnelen",
+        "size": "Klein \u00d8 26cm",
+        "price": "8,30 \u20ac"
+    },
+    {
+        "name": "21. Pizza Riesengarnelen",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,70 \u20ac"
+    },
+    {
+        "name": "21. Pizza Riesengarnelen",
+        "size": "Familie32x50cm",
+        "price": "22,00 \u20ac"
+    },
+    {
+        "name": "22. Pizza Fleisch",
+        "size": "Klein \u00d8 26cm",
+        "price": "8,70 \u20ac"
+    },
+    {
+        "name": "22. Pizza Fleisch",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,20 \u20ac"
+    },
+    {
+        "name": "22. Pizza Fleisch",
+        "size": "Familie32x50cm",
+        "price": "21,50 \u20ac"
+    },
+    {
+        "name": "23. Pizza T\u00fcrkei",
+        "size": "Klein \u00d8 26cm",
+        "price": "8,30 \u20ac"
+    },
+    {
+        "name": "23. Pizza T\u00fcrkei",
+        "size": "Mittel \u00d8 32cm",
+        "price": "10,20 \u20ac"
+    },
+    {
+        "name": "23. Pizza T\u00fcrkei",
+        "size": "Familie32x50cm",
+        "price": "19,50 \u20ac"
+    },
+    {
+        "name": "24. Pizza H\u00e4hnchenstreifen",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,80 \u20ac"
+    },
+    {
+        "name": "24. Pizza H\u00e4hnchenstreifen",
+        "size": "Mittel \u00d8 32cm",
+        "price": "9,20 \u20ac"
+    },
+    {
+        "name": "24. Pizza H\u00e4hnchenstreifen",
+        "size": "Familie32x50cm",
+        "price": "20,00 \u20ac"
+    },
+    {
+        "name": "25. Pizza Capricciosa",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,80 \u20ac"
+    },
+    {
+        "name": "25. Pizza Capricciosa",
+        "size": "Mittel \u00d8 32cm",
+        "price": "10,40 \u20ac"
+    },
+    {
+        "name": "25. Pizza Capricciosa",
+        "size": "Familie32x50cm",
+        "price": "20,50 \u20ac"
+    },
+    {
+        "name": "26. Pizza Speciale",
+        "size": "Klein \u00d8 26cm",
+        "price": "7,30 \u20ac"
+    },
+    {
+        "name": "26. Pizza Speciale",
+        "size": "Mittel \u00d8 32cm",
+        "price": "10,90 \u20ac"
+    },
+    {
+        "name": "26. Pizza Speciale",
+        "size": "Familie32x50cm",
+        "price": "22,00 \u20ac"
+    },
+    {
+        "name": "29. Pizza Caprese",
+        "size": "Klein \u00d8 26cm",
+        "price": "5,50 \u20ac"
+    }
+]
