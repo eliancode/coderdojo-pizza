@@ -10,9 +10,10 @@ datasource db {
 model order {
   id         Int      @id @default(autoincrement())
   personName String
-  pizzaName  String
-  quantity   String
-  size       String
+  orderName  String
+  orderSize  String
+  orderPrice String
   createdAt  DateTime @default(now())
   archived   Boolean  @default(false)
+  paid       Boolean  @default(false)
 }
