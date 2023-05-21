@@ -9,7 +9,7 @@ let data:any;
 
 function App() {
   data = useEffect(() => {
-    axios.get("http://localhost:3000/orders")
+    axios.get("http://localhost:8000/orders")
     .then(res => console.log(res.data)
     ).catch(err => console.log(err)
     )
