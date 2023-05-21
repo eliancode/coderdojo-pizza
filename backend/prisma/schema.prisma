@@ -8,12 +8,12 @@ datasource db {
 }
 
 model order {
-  id         Int      @id @default(autoincrement())
-  personName String
-  orderName  String
-  orderSize  String
-  orderPrice String
-  createdAt  DateTime @default(now())
-  archived   Boolean  @default(false)
-  paid       Boolean  @default(false)
+  id           Int      @id @default(autoincrement())
+  personName   String
+  articleName  String
+  articleSize  String
+  articlePrice String
+  createdAt    DateTime @default(now())
+  archived     Boolean  @default(false)
+  paid         Boolean  @default(false)
 }
