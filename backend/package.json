@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsc && cd dist && nodemon index.js"
+    "start": "npx tsc && nodemon --config config/nodemon.json dist/index.js"
   },
   "author": "Frederik Estel",
   "license": "ISC",
